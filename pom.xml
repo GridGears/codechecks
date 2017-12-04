@@ -8,6 +8,8 @@
     <artifactId>codechecks</artifactId>
     <version>1.0.0</version>
 
+	<description>Configuration for codechecks (PMD, FindBugs, etc.)</description>
+    <url>https://github.com/GridGears/codechecks</url>
 	 <licenses>
         <license>
             <name>MIT License</name>
@@ -28,7 +30,11 @@
             <id>mproestler</id>
         </developer>
     </developers>
-	
+	<scm>
+        <url>https://github.com/GridGears/codechecks</url>
+        <connection>scm:git:git@github.com:GridGears/codechecks.git</connection>
+        <developerConnection>scm:git:git@github.com:GridGears/codechecks.git</developerConnection>
+    </scm>
 	<distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
