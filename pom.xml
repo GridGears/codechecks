@@ -6,7 +6,7 @@
 
     <groupId>at.gridgears</groupId>
     <artifactId>codechecks</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
 	<description>Configuration for codechecks (PMD, FindBugs, etc.)</description>
     <url>https://github.com/GridGears/codechecks</url>
@@ -40,6 +40,10 @@
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
     </distributionManagement>
 	
 	 <profiles>
