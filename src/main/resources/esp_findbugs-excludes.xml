@@ -1,0 +1,88 @@
+<FindBugsFilter>
+    <Match>
+        <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"/>
+    </Match>
+    <Match>
+        <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON"/>
+    </Match>
+    <Match>
+        <Bug pattern="RI_REDUNDANT_INTERFACES"/>
+    </Match>
+
+    <Match>
+        <Bug pattern="NM_SAME_SIMPLE_NAME_AS_INTERFACE"/>
+    </Match>
+
+    <Match>
+        <!-- probably add this rule again-->
+        <Bug pattern="DM_CONVERT_CASE"/>
+    </Match>
+    <Match>
+        <!-- probably add this rule again-->
+        <Bug pattern="DM_DEFAULT_ENCODING"/>
+    </Match>
+    <Match>
+        <or>
+            <Method name="equals"/>
+            <Method name="hashCode"/>
+        </or>
+        <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE"/>
+    </Match>
+    <Match>
+        <or>
+            <Method name="equals"/>
+            <Method name="hashCode"/>
+        </or>
+        <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE"/>
+    </Match>
+
+    <!-- auto generated classes -->
+    <Match>
+        <Package name="~at\.gridgears\..*\.config.*"/>
+        <Bug pattern="NM_METHOD_NAMING_CONVENTION"/>
+    </Match>
+    <Match>
+        <Package name="~at\.gridgears\.config.*"/>
+        <Bug pattern="NM_METHOD_NAMING_CONVENTION"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\..*\.config\.WebConfigurer"/>
+        <Bug pattern="UI_INHERITANCE_UNSAFE_GETRESOURCE"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\.config\.WebConfigurer"/>
+        <Bug pattern="UI_INHERITANCE_UNSAFE_GETRESOURCE"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\..*\.domain\.PersistentAuditEvent"/>
+        <Bug pattern="SE_NO_SERIALVERSIONID"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\.domain\.PersistentAuditEvent"/>
+        <Bug pattern="SE_NO_SERIALVERSIONID"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\..*\.security\.jwt\.JWTFilter"/>
+        <Bug pattern="BC_UNCONFIRMED_CAST"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\.security\.jwt\.JWTFilter"/>
+        <Bug pattern="BC_UNCONFIRMED_CAST"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\..*\.security\.jwt\.TokenProviderTest"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\.security\.jwt\.TokenProviderTest"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\..*\.web\.rest\.ProfileInfoResource.*"/>
+        <Bug pattern="SIC_INNER_SHOULD_BE_STATIC"/>
+    </Match>
+    <Match>
+        <Class name="~at\.gridgears\.web\.rest\.ProfileInfoResource.*"/>
+        <Bug pattern="SIC_INNER_SHOULD_BE_STATIC"/>
+    </Match>
+
+
+</FindBugsFilter>
